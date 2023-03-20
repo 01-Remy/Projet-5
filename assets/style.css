@@ -3,7 +3,7 @@ body {
   margin: auto;
 }
 * {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
 }
 
@@ -36,6 +36,10 @@ h2 {
 
 .nav li {
   padding-inline: 10px;
+}
+
+.nav li span {
+  cursor: pointer;
 }
 
 .nav a {
