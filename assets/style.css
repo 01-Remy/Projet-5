@@ -3,9 +3,14 @@ body {
   margin: auto;
 }
 * {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
 }
+
+h2 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
 .top-header {
   background-color: white;
   position: sticky;
@@ -33,6 +38,10 @@ body {
   padding-inline: 10px;
 }
 
+.nav li span {
+  cursor: pointer;
+}
+
 .nav a {
   text-decoration: none;
   color: #000;
@@ -40,6 +49,7 @@ body {
 
 .social-link img {
   width: 20px;
+  height: 20px;
 }
 
 #about {
@@ -69,20 +79,28 @@ body {
 
 .picture img {
   width: 100%;
+  height: 100%;
 }
+
+footer .picture img {
+  max-height: 450px;
+}
+
 #about-me {
   flex: 2;
 }
+
 .about-me__title {
   margin-top: 1em;
   margin-bottom: 60px;
   font-size: 30px;
 }
-.about-me__introduction {
-  font-family: "Spectral";
+#about-me p.about-me__introduction {
+  font-family: "Spectral", sans-serif;
   font-weight: 800;
   font-style: italic;
   width: 60%;
+  font-size: 1rem;
 }
 #about-me p {
   width: 80%;
@@ -102,7 +120,7 @@ body {
 .nav-pills .nav-link.active-tag,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #beb45a;
+  background-color: #81761d;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -137,19 +155,20 @@ body {
 }
 
 .quote {
-  font-family: "Spectral";
+  font-family: "Spectral", sans-serif;
   font-style: italic;
   width: 70%;
   margin: auto;
   padding-block: 3em;
 }
 .quote__text {
-  font-family: Spectral;
+  font-family: "Spectral", sans-serif;
   font-style: italic;
   font-weight: 300;
+  font-size: calc(1.375rem + 1.5vw);
 }
 .quote__author {
-  font-family: Spectral;
+  font-family: "Spectral", sans-serif;
   font-weight: 800;
   font-size: 22px;
 }
@@ -186,6 +205,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
+}
+
+.service__price p {
+  font-size: calc(1.275rem + 0.3vw);
 }
 
 #contact {
@@ -239,6 +262,18 @@ form textarea {
 input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
+}
+
+@media all and (min-width: 1200px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+  .quote__text {
+    font-size: 2.5rem;
+  }
+  .service__price p {
+    font-size: 1.5rem;
+  }
 }
 
 @media all and (max-width: 1180px) {
