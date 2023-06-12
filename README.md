@@ -1,6 +1,8 @@
 # Projet-5
  SEO - Nina Carducci
 
+Point de départ : https://nina-carducci.github.io/
+
 Objectifs :
 
   - faire une optimisation globale du site, tant sur les performances que sur le SEO
